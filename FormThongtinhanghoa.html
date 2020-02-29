@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Product Information</title>
+        <meta name="description" content="Nhập thông tin hàng hóa" />
+        <meta name="author" content="Minh Tran"/>
+    </head>
+    <body>
+<h2> Product Details</h2>
+    <form>
+        <fieldset>
+            <legend>Add Product Details </legend>
+            Branch name: <input type="text" name="Branch name" placeholder="Branch name" size="5"> <br>
+            Product name <input type="text" name="Product name" placeholder="Product name" size="5"> <br>
+            Made in: <select id="country">
+                <option value="China"> China</option>
+                <option value="Viet Nam"> Viet Nam</option>
+                <option value="Korea"> Korea</option>
+                <option value="Thailand"> Thailand</option>
+                </select> <br>
+            <b>Categories: Select Categories</b>
+                <input type="radio" id="Man" name="Categories" value="Man">
+                <label for="Man">Man Clothing</label>
+                <input type="radio" id="Woman" name="Categories" value="Woman">
+                <label for="Pant">Woman Clothing</label> <br>
+            <b>Size:</b>
+                <input type="checkbox" id="Small" name="Size" value="S">
+                <label for="Size"> S</label>
+                <input type="checkbox" id="Medium" name="Size" value="M">
+                <label for="Size"> M</label>
+                <input type="checkbox" id="Large" name="Size" value="L">
+                <label for="Size"> L</label> <br>
+            <b>Price:</b> Select Price range:
+                <input type="radio" id="Cheap" name="Price" value="1$-10$">
+                <label for="Cheap">1$~10$</label>
+                <input type="radio" id="Normal" name="Price" value="10$-30$">
+                <label for="Normal">10$~30$</label>
+                <input type="radio" id="Expensive" name="Price" value="30$-100$">
+                <label for="Expensive">30$-100$</label> <br>
+            <b><label for="Product Details"> Product Details</label></b>
+            <textarea id="Product Details" rows="6" cols="50"></textarea> <br>
+            <button>
+                Save
+                <img src="https://visualpharm.com/assets/637/Save-595b40b85ba036ed117dc63d.svg" width="18px"/>
+            </button>
+            <input type="submit" name="Send" value="Send" onclick="Complete">
+
+
+        </fieldset>
+    </form>
+
+
+    </body>
+</html>
