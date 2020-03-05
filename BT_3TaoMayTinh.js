@@ -3,13 +3,14 @@
     num2 = document.getElementById('Num2');
     function reset() {
         document.getElementById('result').innerHTML ="";
-        document.getElementById('bReset').style.display = 'none';
+        document.getElementById('Num1').value ="";
+        document.getElementById('Num2').value ="";
     }
     function fAdd() {
-        let sum1 = parseFloat(num1.value)+ parseFloat(num2.value);
+        let sum1 = parseFloat(num1.value) + parseFloat(num2.value);
         console.log(sum1);
         document.getElementById('result').innerHTML ="Result Addition: " + sum1;
-        document.getElementById('bReset').style.display = 'inline';
+        document.getElementById("bReset").style="inline";
 }
 function fSub() {
         let sub1 = parseFloat(num1.value)-parseFloat(num2.value);
@@ -25,4 +26,7 @@ function fDivision() {
         let div1 = parseFloat(num1.value)/parseFloat(num2.value);
         console.log(div1);
         document.getElementById('result').innerHTML ="Result Division: " + div1;
-}
+    }
+
+
+
